@@ -53,7 +53,12 @@ export const Layout = ({ children, activeTab, setActiveTab }: LayoutProps) => {
           <div className="w-8 h-8 bg-blue-900 rounded flex items-center justify-center text-white font-bold">
             TW
           </div>
-          <div>
+          <div
+            className="cursor-pointer hover:opacity-80 transition-opacity"
+  onClick={() => {
+    window.location.href = "https://tracewall-landing-page.netlify.app/";
+  }}
+            >
             <h1 className="text-lg font-bold leading-none">TraceWall</h1>
             <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Enterprise Workspace</p>
           </div>
